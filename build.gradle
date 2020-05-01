@@ -10,10 +10,9 @@ buildscript {
 
 plugins {
    id 'java'
+   id 'maven-publish'
+   id 'signing'
 }
-
-apply plugin: 'maven-publish'
-apply plugin: 'signing'
 
 group 'club.javafamily'
 version '0.1.0-SNAPSHOT'
