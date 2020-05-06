@@ -112,8 +112,6 @@ signing {
 }
 
 javadoc {
-   // <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   // 防止本地打开中文乱码
    options.addStringOption("charset", "UTF-8")
 }
 
