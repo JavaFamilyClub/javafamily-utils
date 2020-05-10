@@ -1,4 +1,4 @@
-package org.javafamily.test;
+package club.javafamily.util.test;
 
 public class MockUtils {
    private MockUtils() {

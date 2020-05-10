@@ -1,4 +1,4 @@
-package org.javafamily.util;
+package club.javafamily.util.string.json;
 
 import com.jayway.jsonpath.JsonPath;
 

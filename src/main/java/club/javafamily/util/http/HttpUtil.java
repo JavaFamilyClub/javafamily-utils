@@ -1,4 +1,4 @@
-package org.javafamily.util;
+package club.javafamily.util.http;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;

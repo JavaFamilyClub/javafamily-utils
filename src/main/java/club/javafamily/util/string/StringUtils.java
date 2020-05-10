@@ -2,7 +2,7 @@
  * Copyright (c) 2020, JavaFamily Technology Corp, All Rights Reserved.
  */
 
-package org.javafamily.util;
+package club.javafamily.util.string;
 
 public final class StringUtils {
    private StringUtils() {
