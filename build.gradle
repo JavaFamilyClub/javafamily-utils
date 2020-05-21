@@ -113,7 +113,7 @@ signing {
 }
 
 javadoc {
-   options.addStringOption("charset", "UTF-8")
+   options.addStringOption("encoding", "UTF-8")
 }
 
 test {
@@ -122,6 +122,12 @@ test {
       events "passed", "skipped", "failed"
    }
 }
+
+tasks.withType(JavaCompile) {
+   options.encoding = 'UTF-8'
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 wrapper {
    gradleVersion '6.2.1'
