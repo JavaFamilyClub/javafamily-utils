@@ -1,6 +1,6 @@
 package club.javafamily.utils.common;
 
-import com.mlog.utils.enums.QueryMatchType;
+import club.javafamily.utils.enums.QueryMatchType;
 import lombok.*;
 
 import java.io.Serializable;

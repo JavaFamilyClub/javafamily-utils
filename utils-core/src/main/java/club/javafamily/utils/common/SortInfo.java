@@ -1,6 +1,6 @@
 package club.javafamily.utils.common;
 
-import com.mlog.utils.enums.SortOptionEnum;
+import club.javafamily.utils.enums.SortOptionEnum;
 import lombok.*;
 
 import java.io.Serializable;
