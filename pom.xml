@@ -18,7 +18,13 @@
     <description>Java utils library</description>
 
     <modules>
-        <module>utils-core</module>
+        <module>javafamily-utils-core</module>
+        <module>javafamily-utils-date</module>
+        <module>javafamily-utils-encryp</module>
+        <module>javafamily-utils-reflect</module>
+        <module>javafamily-utils-network</module>
+        <module>javafamily-utils-ftp</module>
+        <module>javafamily-utils-geo</module>
     </modules>
 
     <distributionManagement>

@@ -9,7 +9,7 @@
         <version>2.3.2-SNAPSHOT</version>
     </parent>
 
-    <artifactId>utils-core</artifactId>
+    <artifactId>javafamily-utils-core</artifactId>
     <packaging>jar</packaging>
 
     <name>utils-core</name>
