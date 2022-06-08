@@ -26,6 +26,7 @@
         <module>javafamily-utils-ftp</module>
         <module>javafamily-utils-geo</module>
         <module>javafamily-utils-all</module>
+        <module>javafamily-utils-bom</module>
     </modules>
 
     <distributionManagement>
@@ -53,6 +54,18 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-bom</artifactId>
+                <version>2.3.2-SNAPSHOT</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <pluginManagement>

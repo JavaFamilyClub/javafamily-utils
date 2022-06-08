@@ -11,4 +11,16 @@
 
     <artifactId>javafamily-utils-date</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
