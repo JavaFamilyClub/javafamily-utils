@@ -12,7 +12,7 @@
     <artifactId>javafamily-utils-core</artifactId>
     <packaging>jar</packaging>
 
-    <name>javafamily-utils-core</name>
+    <name>${project.artifactId}</name>
     <url>https://github.com/JavaFamilyClub/javafamily-utils/utils-core</url>
     <description>Java utils library core</description>
 
