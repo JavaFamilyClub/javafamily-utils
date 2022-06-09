@@ -55,6 +55,18 @@
         </repository>
     </repositories>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-bom</artifactId>
+                <version>${javafamily-core.version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <build>
         <pluginManagement>
             <plugins>
