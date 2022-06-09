@@ -11,4 +11,18 @@
 
     <artifactId>javafamily-utils-geo</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>org.gavaghan</groupId>
+            <artifactId>geodesy</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.locationtech.jts</groupId>
+            <artifactId>jts-core</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>
