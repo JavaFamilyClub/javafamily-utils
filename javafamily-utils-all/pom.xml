@@ -25,11 +25,6 @@
 
         <dependency>
             <groupId>club.javafamily</groupId>
-            <artifactId>javafamily-utils-all</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>club.javafamily</groupId>
             <artifactId>javafamily-utils-encryp</artifactId>
         </dependency>
 
