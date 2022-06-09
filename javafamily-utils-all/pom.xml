@@ -11,4 +11,53 @@
 
     <artifactId>javafamily-utils-all</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-date</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-encryp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-ftp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-geo</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-network</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-reflect</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-file</artifactId>
+        </dependency>
+
+    </dependencies>
+
 </project>

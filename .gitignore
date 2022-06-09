@@ -10,6 +10,7 @@ MANIFEST.MF
 # Compiled class file
 *.class
 /target
+**/target
 /bin
 /out
 /build

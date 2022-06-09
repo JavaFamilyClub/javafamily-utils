@@ -27,6 +27,7 @@
         <module>javafamily-utils-ftp</module>
         <module>javafamily-utils-geo</module>
         <module>javafamily-utils-all</module>
+        <module>javafamily-utils-file</module>
     </modules>
 
     <distributionManagement>
