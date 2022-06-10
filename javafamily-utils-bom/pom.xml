@@ -71,6 +71,12 @@
             <artifactId>javafamily-utils-file</artifactId>
             <version>${project.parent.version}</version>
          </dependency>
+
+         <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-pdf-itext</artifactId>
+            <version>${project.parent.version}</version>
+         </dependency>
       </dependencies>
    </dependencyManagement>
 
