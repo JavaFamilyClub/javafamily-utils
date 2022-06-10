@@ -15,7 +15,12 @@ import java.io.InputStream;
 @Slf4j
 public class PdfUtils {
 
-   private static boolean check(InputStream in) {
+   /**
+    * Check pdf file stream is valid
+    * @param in pdf stream
+    * @return <code>true</code> means valid
+    */
+   private static boolean checkPdfValid(InputStream in) {
       boolean valid = false;
 
       int pageCount = 0;
