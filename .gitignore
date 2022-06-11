@@ -6,6 +6,8 @@
 .gradle
 MANIFEST.MF
 .DS_Store
+**/*.iml
+*.iml
 
 # Compiled class file
 *.class

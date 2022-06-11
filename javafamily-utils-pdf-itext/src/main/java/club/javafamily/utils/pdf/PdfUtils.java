@@ -2,6 +2,7 @@ package club.javafamily.utils.pdf;
 
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfReader;
+import com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.*;
@@ -19,14 +20,14 @@ public class PdfUtils {
     * @param path pdf file path
     * @return <code>true</code> means valid
     */
-   public static boolean checkPdfValid(String path) {
+   public static boolean checkPdfValid(String path) throws FileNotFoundException {
       try {
          return PdfUtils.checkPdfValid(new FileInputStream(path));
       } catch (FileNotFoundException e) {
-         log.debug("Pdf file is not exist: {}", path);
+         log.debug("Pdf file is not exist: {}, Current dir is: {}", path,
+                 new File(".").getAbsolutePath());
+         throw e;
       }
-
-      return false;
    }
 
    /**
@@ -56,7 +57,7 @@ public class PdfUtils {
 //            = PdfTextExtractor.getTextFromPage(lastPage);
 
          pdfDocument.close();
-      } catch (IOException e) {
+      } catch (Exception e) {
          log.debug("PDF check failed!", e);
 
          if(pdfDocument != null) {
