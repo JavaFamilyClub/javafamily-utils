@@ -55,12 +55,11 @@ public class PdfUtils {
 //         String textFromPdfFilePageOne
 //            = PdfTextExtractor.getTextFromPage(lastPage);
 
-         pdfDocument.close();
       } catch (Exception e) {
          log.debug("PDF check failed!", e);
 
          if(pdfDocument != null) {
-            pdfDocument.close();
+//            pdfDocument.close();
          }
       }
 
