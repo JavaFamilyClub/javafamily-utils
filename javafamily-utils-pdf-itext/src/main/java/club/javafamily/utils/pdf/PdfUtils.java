@@ -51,16 +51,12 @@ public class PdfUtils {
             valid = true;
          }
 
-//         final PdfPage lastPage = pdfDocument.getFirstPage();
-//         String textFromPdfFilePageOne
-//            = PdfTextExtractor.getTextFromPage(lastPage);
-
+         // reset 流
+         if(in.markSupported()) {
+            in.reset();
+         }
       } catch (Exception e) {
          log.debug("PDF check failed!", e);
-
-         if(pdfDocument != null) {
-//            pdfDocument.close();
-         }
       }
 
       return valid;
