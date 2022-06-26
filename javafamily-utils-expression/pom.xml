@@ -9,10 +9,17 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>javafamily-utils-network</artifactId>
+    <artifactId>javafamily-utils-expression</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <url>https://github.com/JavaFamilyClub/javafamily-utils/javafamily-utils-network</url>
-    <description>Java utils library for network</description>
+    <url>https://github.com/JavaFamilyClub/javafamily-utils/javafamily-utils-expression</url>
+    <description>Java utils library for expression</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -30,6 +30,7 @@
 
         <module>javafamily-utils-bom</module>
         <module>javafamily-utils-all</module>
+        <module>javafamily-utils-expression</module>
     </modules>
 
     <distributionManagement>
