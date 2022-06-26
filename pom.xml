@@ -27,10 +27,9 @@
         <module>javafamily-utils-geo</module>
         <module>javafamily-utils-file</module>
         <module>javafamily-utils-pdf-itext</module>
-
-        <module>javafamily-utils-bom</module>
-        <module>javafamily-utils-all</module>
         <module>javafamily-utils-expression</module>
+
+        <module>javafamily-utils-all</module>
     </modules>
 
     <distributionManagement>

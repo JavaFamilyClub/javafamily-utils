@@ -58,6 +58,11 @@
             <artifactId>javafamily-utils-pdf-itext</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>club.javafamily</groupId>-->
+<!--            <artifactId>javafamily-utils-expression</artifactId>-->
+<!--        </dependency>-->
+
     </dependencies>
 
 </project>
