@@ -6,7 +6,7 @@ import org.springframework.expression.spel.support.StandardEvaluationContext;
 
 public final class SpelUtils {
 
-    private static final SpelExpressionParser spelParser = new SpelExpressionParser();
+    public static final SpelExpressionParser spelParser = new SpelExpressionParser();
 
     public static <T> T calcValue(String expression,
                                   Class<T> valueType,
@@ -15,6 +15,15 @@ public final class SpelUtils {
         return calcValue(expression, valueType, targetObj, null);
     }
 
+    /**
+     * calc spel value
+     * @param expression expression
+     * @param valueType type of return value
+     * @param targetObj this object
+     * @param fieldValue this object's field value
+     * @param <T> return value type
+     * @return value
+     */
     public static <T> T calcValue(String expression,
                                   Class<T> valueType,
                                   Object targetObj,
