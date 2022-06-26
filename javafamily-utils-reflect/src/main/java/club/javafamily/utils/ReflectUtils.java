@@ -61,7 +61,7 @@ public class ReflectUtils {
       }
       else if(clazz == LocalDate.class) {
          return LocalDate.parse(value,
-            DateTimeFormatter.ofPattern(DateUtil.ONLY_DATE_FORMAT));
+            DateTimeFormatter.ofPattern(DateUtil.NORMAL_DATE_FORMAT));
       }
       else if(clazz == LocalTime.class) {
          return LocalTime.parse(value,
@@ -72,7 +72,7 @@ public class ReflectUtils {
             DateTimeFormatter.ofPattern(Tool.DEFAULT_DATETIME_FORMAT));
       }
       else if(clazz == Date.class) {
-         return DateUtil.parseNormalDate(value);
+         return DateUtil.parseDateTime(value);
       }
 
       return value;
