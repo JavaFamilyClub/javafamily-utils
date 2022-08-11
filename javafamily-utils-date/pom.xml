@@ -12,7 +12,7 @@
     <artifactId>javafamily-utils-date</artifactId>
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
-    <url>https://github.com/JavaFamilyClub/javafamily-utils/utils-date</url>
+    <url>https://github.com/JavaFamilyClub/javafamily-utils/tree/master/javafamily-utils-date</url>
     <description>Java utils library for date</description>
 
     <distributionManagement>

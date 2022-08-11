@@ -9,13 +9,22 @@
    </parent>
    <modelVersion>4.0.0</modelVersion>
 
-   <artifactId>javafamily-utils-pdf-itext</artifactId>
+   <artifactId>javafamily-utils-json</artifactId>
+   <packaging>jar</packaging>
+
+   <name>${project.artifactId}</name>
+   <url>https://github.com/JavaFamilyClub/javafamily-utils/tree/master/javafamily-utils-json</url>
+   <description>Java utils library core</description>
 
    <dependencies>
       <dependency>
-         <groupId>com.itextpdf</groupId>
-         <artifactId>itext7-core</artifactId>
-         <type>pom</type>
+         <groupId>com.alibaba</groupId>
+         <artifactId>fastjson</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>club.javafamily</groupId>
+         <artifactId>javafamily-utils-core</artifactId>
       </dependency>
 
       <dependency>

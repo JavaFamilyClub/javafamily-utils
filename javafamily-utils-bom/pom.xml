@@ -110,6 +110,12 @@
             <artifactId>javafamily-utils-pdf-itext</artifactId>
             <version>${javafamily.utils.version}</version>
          </dependency>
+
+         <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-json</artifactId>
+            <version>${javafamily.utils.version}</version>
+         </dependency>
       </dependencies>
    </dependencyManagement>
 

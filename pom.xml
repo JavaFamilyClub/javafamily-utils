@@ -28,6 +28,7 @@
         <module>javafamily-utils-file</module>
         <module>javafamily-utils-pdf-itext</module>
         <module>javafamily-utils-expression</module>
+        <module>javafamily-utils-json</module>
 
         <module>javafamily-utils-all</module>
     </modules>
