@@ -63,6 +63,11 @@
             <artifactId>javafamily-utils-expression</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>club.javafamily</groupId>
+            <artifactId>javafamily-utils-json</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

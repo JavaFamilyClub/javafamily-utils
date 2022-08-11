@@ -15,6 +15,6 @@ public interface JsonUtilsConstant {
    /**
     * markdown table 第二行
     */
-   String MK_TABLE_SPLIT_PLACEHOLDER = "  -----  ";
+   String MK_TABLE_SPLIT_PLACEHOLDER = "  :-:  ";
 
 }
