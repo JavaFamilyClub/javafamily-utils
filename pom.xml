@@ -6,7 +6,7 @@
 
     <groupId>club.javafamily</groupId>
     <artifactId>javafamily-utils</artifactId>
-    <version>2.3.2-beta.3</version>
+    <version>2.3.2-beta.4</version>
     <packaging>pom</packaging>
 
     <name>javafamily-utils</name>
@@ -23,7 +23,7 @@
     </licenses>
     <!-- SCM信息 -> git在github上托管 -->
     <scm>
-        <url>https://github.com/JavaFamilyClub/javafamily-parent</url>
+        <url>https://github.com/JavaFamilyClub/javafamily-utils</url>
         <connection>scm:git:git://github.com/JavaFamilyClub/javafamily-utils.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/JavaFamilyClub/javafamily-utils.git</developerConnection>
     </scm>
@@ -74,7 +74,7 @@
         <fastJson.version>1.2.83</fastJson.version>
         <pdf.itext.version>7.1.13</pdf.itext.version>
 
-        <javafamily.utils.version>2.3.2-beta.3</javafamily.utils.version>
+        <javafamily.utils.version>2.3.2-beta.4</javafamily.utils.version>
     </properties>
 
     <dependencyManagement>
