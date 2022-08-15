@@ -2,15 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <groupId>club.javafamily</groupId>
-        <artifactId>javafamily-parent</artifactId>
-        <version>2.3.2-beta.4</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>club.javafamily</groupId>
     <artifactId>javafamily-utils</artifactId>
-    <version>2.3.2-beta.2</version>
+    <version>2.3.2-beta.3</version>
     <packaging>pom</packaging>
 
     <name>javafamily-utils</name>
@@ -32,6 +28,160 @@
 
         <module>javafamily-utils-all</module>
     </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk.version>1.8</jdk.version>
+        <maven.compiler.source>${jdk.version}</maven.compiler.source>
+        <maven.compiler.target>${jdk.version}</maven.compiler.target>
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <maven.compile.plugin.version>3.6.0</maven.compile.plugin.version>
+
+        <lombok.version>1.18.8</lombok.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <joda-time.version>2.10.10</joda-time.version>
+        <geodesy.version>1.1.3</geodesy.version>
+        <commons.compress.version>1.18</commons.compress.version>
+        <jts-core.version>1.16.0</jts-core.version>
+        <fastJson.version>1.2.83</fastJson.version>
+        <pdf.itext.version>7.1.13</pdf.itext.version>
+
+        <javafamily.utils.version>2.3.2-beta.3</javafamily.utils.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- spring boot dependencies -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.itextpdf</groupId>
+                <artifactId>itext7-core</artifactId>
+                <version>${pdf.itext.version}</version>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastJson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.locationtech.jts</groupId>
+                <artifactId>jts-core</artifactId>
+                <version>${jts-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda-time.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-compress</artifactId>
+                <version>${commons.compress.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.gavaghan</groupId>
+                <artifactId>geodesy</artifactId>
+                <version>${geodesy.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-core</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-date</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-all</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-encryp</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-ftp</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-geo</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-network</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-reflect</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-file</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-expression</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-pdf-itext</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>club.javafamily</groupId>
+                <artifactId>javafamily-utils-json</artifactId>
+                <version>${javafamily.utils.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
@@ -72,6 +222,210 @@
     </repositories>
 
     <build>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.2.1</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>2.9.1</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <additionalJOption>-Xdoclint:none</additionalJOption>
+                        <failOnError>false</failOnError>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.sonatype.plugins</groupId>
+                    <artifactId>nexus-staging-maven-plugin</artifactId>
+                    <version>1.6.8</version>
+                    <!-- autoReleaseAfterClose的值为true，则脚本会自动完成在平台上close、release的操作，至此你将成功发布了 -->
+                    <extensions>true</extensions>
+                    <configuration>
+                        <serverId>javafamily-central-release</serverId>
+                        <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                        <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
+                    <configuration>
+                        <autoVersionSubmodules>true</autoVersionSubmodules>
+                        <useReleaseProfile>false</useReleaseProfile>
+                        <releaseProfiles>release</releaseProfiles>
+                        <goals>deploy</goals>
+                    </configuration>
+                </plugin>
+
+                <!--  必须配置GPG插件用于使用以下配置对组件进行签名 -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>3.0.1</version>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>sign</goal>
+                            </goals>
+                            <configuration>
+                                <!-- Prevent `gpg` from using pinentry programs -->
+                                <gpgArguments>
+                                    <arg>--pinentry-mode</arg>
+                                    <arg>loopback</arg>
+                                </gpgArguments>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-archetype-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${maven.compile.plugin.version}</version>
+                    <configuration>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
+                        <!--                  <encoding>${project.build.sourceEncoding}}</encoding>-->
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>3.0.2</version>
+                    <configuration>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.version}</version>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
+
+                <plugin>
+                    <groupId>com.spotify</groupId>
+                    <artifactId>dockerfile-maven-plugin</artifactId>
+                    <version>${docker-build.plugin.version}</version>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>3.1.1</version>
+                    <configuration>
+                        <configLocation>codeStyle/google_checks.xml</configLocation>
+                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                        <encoding>${project.build.sourceEncoding}</encoding>
+                        <consoleOutput>true</consoleOutput>
+                        <logViolationsToConsole>true</logViolationsToConsole>
+                        <failsOnError>false</failsOnError>
+                        <failOnViolation>false</failOnViolation>
+                        <violationSeverity>warning</violationSeverity>
+                        <linkXRef>false</linkXRef>
+                        <skip>true</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>validate</id>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>findbugs-maven-plugin</artifactId>
+                    <version>3.0.5</version>
+                    <configuration>
+                        <!-- 设置分析工作的等级，可以为Min、Default 和 Max -->
+                        <effort>Default</effort>
+                        <!-- Low、Medium 和 High (Low最严格) -->
+                        <threshold>Medium</threshold>
+                        <failOnError>false</failOnError>
+                        <includeTests>true</includeTests>
+                        <excludeFilterFile>codeStyle/findbugs-exclude-bugs.xml</excludeFilterFile>
+                        <skip>true</skip>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>run-findbugs</id>
+                            <phase>package</phase>
+                            <goals>
+                                <!--检查不通过会构建失败，使用findbugs，失败也会构建-->
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.8</version>
+                    <executions>
+                        <execution>
+                            <phase>validate</phase>
+                            <goals>
+                                <goal>run</goal>
+                            </goals>
+                            <configuration>
+                                <tasks>
+                                    <echo>Copy mvnw file</echo>
+                                    <copy file="mvnw" tofile="${basedir}/target/generated-sources/archetype/mvnw"/>
+                                    <copy todir="${basedir}/target/generated-sources/archetype/.mvn">
+                                        <fileset dir=".mvn">
+                                            <include name="**/*"/>
+                                        </fileset>
+                                    </copy>
+                                </tasks>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
