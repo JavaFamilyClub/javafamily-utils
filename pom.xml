@@ -13,6 +13,34 @@
     <url>https://github.com/JavaFamilyClub/javafamily-utils</url>
     <description>Java utils library</description>
 
+    <!-- 许可证信息 -->
+    <licenses>
+        <!-- Apache许可证 -->
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <!-- SCM信息 -> git在github上托管 -->
+    <scm>
+        <url>https://github.com/JavaFamilyClub/javafamily-parent</url>
+        <connection>scm:git:git://github.com/JavaFamilyClub/javafamily-utils.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/JavaFamilyClub/javafamily-utils.git</developerConnection>
+    </scm>
+
+    <!-- 开发者信息 -->
+    <developers>
+        <developer>
+            <name>JavaFamily</name>
+            <email>javafamily.club@outlook.com</email>
+            <organization>JavaFamily</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
     <modules>
         <module>javafamily-utils-core</module>
         <module>javafamily-utils-date</module>
