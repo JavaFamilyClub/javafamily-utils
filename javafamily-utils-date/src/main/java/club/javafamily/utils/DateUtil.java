@@ -22,6 +22,19 @@ public class DateUtil {
    public static final String NORMAL_DATETIME_FORMAT = Tool.DEFAULT_DATETIME_FORMAT;
    public static final String FULL_NORMAL_DATETIME_FORMAT = "yyyy-MM-dd HH:mm:ss.SSS";
 
+   /**
+    * 判断一个类型是否是 Date 类型
+    * @param clazz
+    * @return
+    */
+   public static boolean isDatetime(Class<?> clazz) {
+      return Date.class.isAssignableFrom(clazz)
+         || LocalDateTime.class.isAssignableFrom(clazz)
+         || LocalDate.class.isAssignableFrom(clazz)
+         || LocalTime.class.isAssignableFrom(clazz)
+         ;
+   }
+
    public static Date convertToGlobalDate(Date date) {
       return convertDate(date, -8);
    }
