@@ -491,6 +491,14 @@ public class DateUtil {
       return DATE_HOUR_FORMAT.get().format(date);
    }
 
+   public static Date parseNormalDateHour(String dateStr) {
+      try {
+         return DATE_HOUR_FORMAT.get().parse(dateStr);
+      } catch (ParseException e) {
+         throw new RuntimeException(e);
+      }
+   }
+
    public static Calendar getTodayStartCalendar() {
       Calendar calendar = DateUtil.getCalendar(new Date());
 
