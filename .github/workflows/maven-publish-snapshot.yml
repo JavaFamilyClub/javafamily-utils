@@ -6,7 +6,7 @@ name: MavenPublishSnapshot
 on:
   push:
     branches: [
-      main
+      master
     ]
     paths-ignore:
       - '**.md'
