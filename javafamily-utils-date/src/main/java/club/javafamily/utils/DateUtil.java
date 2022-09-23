@@ -491,6 +491,11 @@ public class DateUtil {
       return DATE_HOUR_FORMAT.get().format(date);
    }
 
+   /**
+    * parse "yyyy-MM-dd HH"
+    * @param dateStr date str
+    * @return Date
+    */
    public static Date parseNormalDateHour(String dateStr) {
       try {
          return DATE_HOUR_FORMAT.get().parse(dateStr);
