@@ -487,6 +487,11 @@ public class DateUtil {
       return COMPACT_DATE_FORMATTER.get().format(date);
    }
 
+   /**
+    * format to "yyyy-MM-dd HH"
+    * @param date date
+    * @return date str
+    */
    public static String formatNormalDateHour(Date date) {
       return DATE_HOUR_FORMAT.get().format(date);
    }
