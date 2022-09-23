@@ -11,6 +11,11 @@ import java.time.*;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * @author Jack Li
+ * @date 2022/9/23 下午10:25
+ * @description date utils
+ */
 public class DateUtil {
 
    public static final long DAY_MS = 24 * 60 * 60 * 1000;
